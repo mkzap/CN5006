@@ -1,1 +1,5 @@
+So firstly i had to make constant functions and variables for example discount, set discount = userstate meaning the user would input a value. The final price is the main calculation as we're getting the orgiinal price * the discount and dividing by one hundred because its a percentage. Then I added html so the product name, orginal price of the item all the text needed on the website itself as well.
 
+I then added a button html and wrote onClick=calculate discount meaning whenever the user clicked the button it would automatically run the calculateDiscount function. I changed discounted price's colour to green and made it bold as that was one of the requirements. 
+
+Back in the main.jsx i imported discountcalculator and also added product name which was mobile phone and the price to it in strict mode. 
