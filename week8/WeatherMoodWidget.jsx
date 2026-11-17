@@ -3,7 +3,7 @@ import rainy from "./rainy.png";
 import Cloudy from "./Cloudy.png";
 import sunny from "./sunny.png"; 
 
-function WeatherCounter({ pic: selectedEmoji }) {
+function WeatherCounter({ pic: selectedWeather }) {
  const [image, setImage] = useState(rainy);
  const [count, setCount] = useState(0);
  useEffect(() => {
@@ -12,18 +12,18 @@ function WeatherCounter({ pic: selectedEmoji }) {
  Cloudy,
  sunny,
  };
- setImage(emojiImages[selectedEmoji] || rainy);
- }, [selectedEmoji]);
+ setImage(emojiImages[selectedWeather] || rainy);
+ }, [selectedWeather]);
  const handleClick = () => {
  setCount((prevCount) => prevCount + 1);
  };
  return (
  <div className="App">
  <p>
- {selectedEmoji}
+ {selectedWeather}
  <button type="button" onClick={handleClick}>
  {count}
- <img src={image} width={100} height={100} alt={selectedEmoji} />
+ <img src={image} width={100} height={100} alt={selectedWeather} />
  </button>
  </p>
  <p>&nbsp;</p>
