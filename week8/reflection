@@ -1,1 +1,3 @@
+I firstly imported react and my three sunny, cloudy and rainy images. I then created a function called weather counter with parameter pic: selectedWeather. I then created two varaibles count and image. I then typed useState which is a react hook allowing me to store and update information in that component. Also useEffect allows us to run code when something changes e.g. the count.  I made an arrow function, and an object in it to store the three images via emojiImages name. We then ade a button click function which incrememnts previous count by 1. I then turned the images into buttons. I noticed that the images were very big which I didn't like so I changed the width and height to 100. Then I obviously exported it so it would be usable in main. 
+
 
